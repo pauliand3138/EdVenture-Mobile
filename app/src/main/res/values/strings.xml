@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EdVenture</string>
+
+    <string name="editusername_hint"><font size="5">USERNAME</font></string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

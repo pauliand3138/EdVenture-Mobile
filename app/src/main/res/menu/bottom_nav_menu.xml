@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/homeicon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_game"
+        android:icon="@drawable/gameicon"
+        android:title="Game" />
+
+    <item
+        android:id="@+id/navigation_courses"
+        android:icon="@drawable/courseicon"
+        android:title="Courses" />
+
+    <item
+        android:id="@+id/navigation_rewards"
+        android:icon="@drawable/rewardicon"
+        android:title="Reward" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/personicon"
+        android:title="Profile" />
+
+</menu>
