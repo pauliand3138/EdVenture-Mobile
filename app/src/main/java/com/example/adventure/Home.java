@@ -1,9 +1,12 @@
 package com.example.adventure;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -16,6 +19,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.adventure.databinding.ActivityHomeBinding;
 
 public class Home extends AppCompatActivity {
+    ImageView leaderboard;
 
     private ActivityHomeBinding binding;
 
@@ -40,6 +44,15 @@ public class Home extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_home);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
+
+        leaderboard = findViewById(R.id.imageView7);
+        leaderboard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Leaderboard.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdVenture">
         <activity
+            android:name=".Leaderboard"
+            android:exported="true" />
+        <activity
             android:name=".Home"
             android:exported="true"
             android:label="@string/title_activity_home" />
