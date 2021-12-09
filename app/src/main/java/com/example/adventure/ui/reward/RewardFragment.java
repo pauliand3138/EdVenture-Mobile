@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.adventure.R;
 
-public class RewardFragment extends Fragment {
+public class    RewardFragment extends Fragment {
 
     private RewardViewModel mViewModel;
 

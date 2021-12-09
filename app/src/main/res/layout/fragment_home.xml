@@ -59,7 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/leaderboardImage"
         android:layout_width="388dp"
         android:layout_height="344dp"
         android:layout_marginTop="4dp"
@@ -76,7 +76,7 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/homevector2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/leaderboardImage" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -85,7 +85,7 @@
         android:layout_marginTop="16dp"
         android:src="@drawable/homevector3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/leaderboardImage" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
