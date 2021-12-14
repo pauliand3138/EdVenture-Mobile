@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AdVenture">
         <activity
+            android:name=".QuizQuestion"
+            android:exported="true" />
+        <activity
+            android:name=".Quiz"
+            android:exported="true" />
+        <activity
             android:name=".Cart"
             android:exported="true" />
         <activity

@@ -47,6 +47,17 @@ public class CartViewHolder extends RecyclerView.ViewHolder {
                 int addToCartQty = Integer.parseInt(itemQty.getText().toString());
                 addToCartQty++;
                 itemQty.setText(String.valueOf(addToCartQty));
+                cartTable.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        cartTable.child(itemName.getText().toString()).child("itemQty").setValue(itemQty.getText().toString());
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
 
@@ -57,6 +68,17 @@ public class CartViewHolder extends RecyclerView.ViewHolder {
                 if(addToCartQty > 1) {
                     addToCartQty--;
                     itemQty.setText(String.valueOf(addToCartQty));
+                    cartTable.addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                            cartTable.child(itemName.getText().toString()).child("itemQty").setValue(itemQty.getText().toString());
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                        }
+                    });
                 }
             }
         });

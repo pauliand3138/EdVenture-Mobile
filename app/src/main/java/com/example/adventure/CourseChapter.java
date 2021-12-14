@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class CourseChapter extends AppCompatActivity {
-    ImageView subtopicButton, backButton;
+    ImageView subtopicButton, backButton, quizButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,16 @@ public class CourseChapter extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(CourseChapter.this, CourseVideo.class);
+                startActivity(intent);
+            }
+        });
+
+        quizButton = findViewById(R.id.quiz);
+
+        quizButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CourseChapter.this, Quiz.class);
                 startActivity(intent);
             }
         });

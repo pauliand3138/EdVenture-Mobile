@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_margin="70dp"
+    app:cardBackgroundColor="@color/white"
     app:cardElevation="4dp"
     >
 
@@ -17,7 +18,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="285dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_weight="9"
             android:orientation="vertical">
@@ -36,62 +37,46 @@
                 android:elevation="0dp"
                 app:iconTint="@null" />
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:fontFamily="@font/roboto_bold"
-                android:textSize="22sp"
-                android:textColor="@color/black"
-                android:text="INTRODUCTION TO ALGORITHM" />
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/algorithm"
-                android:layout_gravity="center_horizontal"/>
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/submitquiz"/>
+
+            <TextView
+                android:layout_width="178dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/mukta_vaani_bold"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Quiz Submitted"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
+                android:paddingTop="10dp"
+                android:fontFamily="@font/mukta_vaani_bold"
                 android:textAlignment="center"
-                android:fontFamily="@font/roboto"
-                android:layout_marginHorizontal="8dp"
-                android:text="Prepare for bagic computer science foundamental knowledge , no experience or degree is required. With professional training dessigned by EdVenture"
+                android:textSize="18sp"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/roboto_light"
-                android:paddingBottom="30dp"
-                android:text="DR. Lukes \t\t\t\t\t\t\t\t\t\t\t\t\t 10+ HOURS"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:text="100 Points Earned"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/enrollButton"
-                android:layout_width="336dp"
-                android:layout_height="59dp"
+                android:id="@+id/doneButton"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:shadowRadius="5"
-                android:text="ENROLL"
-                app:backgroundTint="#27B5F1"
+                android:text="Done"
+                app:backgroundTint="#FF8762"
                 app:cornerRadius="5dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
