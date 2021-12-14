@@ -1,5 +1,6 @@
 package com.example.adventure.ui.courses;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +15,9 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.example.adventure.CourseChapter;
+import com.example.adventure.Home;
+import com.example.adventure.Leaderboard;
 import com.example.adventure.R;
 import com.example.adventure.databinding.FragmentCoursesBinding;
 import com.google.android.material.button.MaterialButton;
@@ -84,7 +88,8 @@ public class CoursesFragment extends Fragment {
                 enrollButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        dialog.dismiss();
+                        Intent intent = new Intent(getActivity(), CourseChapter.class);
+                        startActivity(intent);
                     }
                 });
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "359962262797",
+    "project_id": "edventure-628aa",
+    "storage_bucket": "edventure-628aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359962262797:android:39f16c0ba0aee88e8d4444",
+        "android_client_info": {
+          "package_name": "com.example.adventure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "359962262797-ecel2i6tm9ohgtar1mtn9a7ks6bk12bp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA1tA7swpw2HPlbDXTcq2CYJd684vO4vc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "359962262797-ecel2i6tm9ohgtar1mtn9a7ks6bk12bp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

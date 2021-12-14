@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp">
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:checked="true"/>
+
+        <ImageView
+            android:id="@+id/itemPhoto"
+            android:layout_width="125dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="-10dp"
+            android:src="@drawable/foodpandaphoto"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/mukta_vaani_semibold"
+            android:text="RM 20 FOODPANDA VOUCHER"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/itemPhoto"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="141dp"
+            android:fontFamily="@font/mukta_vaani_semibold"
+            android:text="100 Points"
+            android:textColor="#D31919"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemName" />
+
+
+        <ImageView
+            android:id="@+id/addButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_baseline_add_24"
+            app:layout_constraintEnd_toStartOf="@+id/qtyText"
+            app:layout_constraintTop_toBottomOf="@+id/itemPoints" />
+
+        <TextView
+            android:id="@+id/qtyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="6dp"
+            android:text="1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/minusButton"
+            app:layout_constraintTop_toBottomOf="@+id/itemPoints" />
+
+        <ImageView
+            android:id="@+id/minusButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="139dp"
+            android:src="@drawable/ic_baseline_remove_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemPoints" />
+
+        <ImageView
+            android:id="@+id/trashButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_baseline_delete_forever_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
