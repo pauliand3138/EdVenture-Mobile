@@ -13,7 +13,7 @@ We all know how tough it is to focus during an online class on Zoom/ Google Meet
 
 ## MVP Tech Stack
 - Android SDK
-- Firebase (Implementing soon)
+- Firebase 
 
 
 This is a joint project by @LunlunChin and @pauliand3138 on github
