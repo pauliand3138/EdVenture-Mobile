@@ -11,7 +11,7 @@ EdVenture is a mobile apps based digitalized online learning platform. Which mai
 ## 💡 Inspiration
 We all know how tough it is to focus during an online class on Zoom/ Google Meet.. And lot of time is spend in classroom learning repeating stuff instead of exploring new knowledges. The interactive learning experience is important for students to more focus in class with specialized learning resources
 
-## MVP Tech Stack
+## Tech Stack
 - Android SDK
 - Firebase 
 
